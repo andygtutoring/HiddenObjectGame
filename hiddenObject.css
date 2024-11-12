@@ -1,0 +1,55 @@
+/* hiddenObject.css */
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landscape {
+  width: 100%;
+  height: 70vh;
+  background-image: url('images/bgHiddenObject.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative; /* Allow absolute positioning for hidden objects */
+}
+
+.word-bank {
+  width: 100%;
+  height: 15vh;
+  overflow-y: auto;
+}
+
+.word-bank ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.word-bank li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.word-bank li:last-child {
+  border-bottom: none;
+}
+
+.score {
+  width: 100%;
+  height: 10vh;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hidden-object {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.found {
+  border: 2px solid red;
+}
